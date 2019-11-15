@@ -298,7 +298,7 @@ public class BackPropTrainingProgram {
         {
             if (i % valsPerRow == 0) System.out.println("");
 //            System.out.print(vector[i].toString("F" + decimals).PadLeft(decimals + 4) + " ");
-            System.out.print(StringUtils.leftPad(String.format("%.2f" + decimals, vector[i]), decimals + 4, " ") + " ");
+            System.out.print(StringUtils.leftPad(String.format("%." + decimals + "f", vector[i]), decimals + 4, " ") + " ");
 
         }
         if (newLine == true) System.out.println("");
